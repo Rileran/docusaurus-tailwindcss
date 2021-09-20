@@ -1,6 +1,19 @@
 {
+  "name": "docusaurus-tailwindcss",
   "version": "0.1.0",
+  "description": "Docusaurus v2 plugin to provide support for tailwincss.",
+  "repository": "https://github.com/Rileran/docusaurus-tailwindcss",
+  "author": {
+    "name": "Rileran",
+    "email": "a.rileran@gmail.com",
+    "url": "https://github.com/Rileran"
+  },
   "license": "MIT",
+  "keywords": [
+    "docusaurus",
+    "docusaurus-plugin",
+    "tailwindcss"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -19,7 +32,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -31,8 +43,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "docusaurus-tailwindcss",
-  "author": "Rileran",
   "module": "dist/docusaurus-tailwindcss.esm.js",
   "size-limit": [
     {
@@ -44,14 +54,19 @@
       "limit": "10 KB"
     }
   ],
+  "dependencies": {
+    "autoprefixer": "10.3.4",
+    "postcss": "8.3.6",
+    "tailwindcss": "2.2.15"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.0"
+  },
   "devDependencies": {
     "@docusaurus/types": "2.0.0-beta.6",
     "@size-limit/preset-small-lib": "5.0.3",
-    "autoprefixer": "10.3.4",
     "husky": "7.0.2",
-    "postcss": "8.3.6",
     "size-limit": "5.0.3",
-    "tailwindcss": "2.2.15",
     "tsdx": "0.14.1",
     "tslib": "2.3.1",
     "typescript": "4.4.3"
