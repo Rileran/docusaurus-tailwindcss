@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "docusaurus-tailwindcss",
+  "author": "Rileran",
+  "module": "dist/docusaurus-tailwindcss.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/docusaurus-tailwindcss.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/docusaurus-tailwindcss.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@docusaurus/types": "2.0.0-beta.6",
+    "@size-limit/preset-small-lib": "5.0.3",
+    "autoprefixer": "10.3.4",
+    "husky": "7.0.2",
+    "postcss": "8.3.6",
+    "size-limit": "5.0.3",
+    "tailwindcss": "2.2.15",
+    "tsdx": "0.14.1",
+    "tslib": "2.3.1",
+    "typescript": "4.4.3"
+  }
+}
