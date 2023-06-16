@@ -1,7 +1,7 @@
 {
   "name": "docusaurus-tailwindcss",
-  "version": "0.1.0",
-  "description": "Docusaurus v2 plugin to provide support for tailwincss.",
+  "version": "1.0.0",
+  "description": "Docusaurus v2/v3 plugin to provide support for Tailwind CSS.",
   "repository": "https://github.com/Rileran/docusaurus-tailwindcss",
   "author": {
     "name": "Rileran",
@@ -21,7 +21,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -55,20 +55,20 @@
     }
   ],
   "dependencies": {
-    "autoprefixer": "10.3.4",
-    "postcss": "8.3.6",
-    "tailwindcss": "2.2.15"
+    "autoprefixer": "10.4.14",
+    "postcss": "8.4.24",
+    "tailwindcss": "3.3.2"
   },
   "peerDependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.0"
+    "@docusaurus/core": ">=3.0.0-alpha.0 || >=2.0.0-alpha.0 || >=0.0.0-3892"
   },
   "devDependencies": {
-    "@docusaurus/types": "2.0.0-beta.6",
-    "@size-limit/preset-small-lib": "5.0.3",
-    "husky": "7.0.2",
-    "size-limit": "5.0.3",
+    "@docusaurus/types": "3.0.0-alpha.0",
+    "@size-limit/preset-small-lib": "8.2.4",
+    "husky": "8.0.3",
+    "size-limit": "8.2.4",
     "tsdx": "0.14.1",
-    "tslib": "2.3.1",
-    "typescript": "4.4.3"
+    "tslib": "2.5.3",
+    "typescript": "5.1.3"
   }
 }

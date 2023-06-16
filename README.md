@@ -1,11 +1,11 @@
-# Tailwindcss for Docusaurus v2
+# Tailwind CSS for Docusaurus v2/v3
 
-Docusaurus v2 plugin to provide support for [tailwincss](https://tailwindcss.com/).
+Docusaurus v2 plugin to provide support for [tailwindcss](https://tailwindcss.com/).
 
 ## Features
 
-- Configured with [autoprefixer](https://github.com/postcss/autoprefixer) as recommanded in tailwindcss configuration.
-- Native tailwindcss configuration with `tailwind.config.js`.
+- Configured with [autoprefixer](https://github.com/postcss/autoprefixer) as recommended in tailwindcss configuration.
+- Native Tailwind CSS configuration with `tailwind.config.js`.
 
 ## Installation
 
